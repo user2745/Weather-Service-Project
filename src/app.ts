@@ -13,14 +13,6 @@ app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
-
-app.get('/', (req, res, next) => {
-    res.status(200).json({
-        status: `Welcome to the Weather API`
-    });
-})
-
 app.use('/', routes);
 
 export default app;
